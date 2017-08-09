@@ -16,6 +16,7 @@ class Vector(object):
             raise TypeError('The coordinates must be an iterable')
 
     def __iter__(self):
+        self.idx = 0
         return self
 
     def __next__(self):
